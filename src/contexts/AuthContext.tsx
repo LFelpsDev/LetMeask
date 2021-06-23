@@ -63,6 +63,8 @@ async  function signInWithGoogle(){
          })
       }
   }
+
+  
   return (
     <AuthContext.Provider value={{ user, signInWithGoogle }}>
       {props.children}
