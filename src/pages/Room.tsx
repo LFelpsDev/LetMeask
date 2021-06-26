@@ -4,7 +4,7 @@ import { RoomCode } from "../components/RoomCode";
 
 import "../styles/room.scss";
 import { Button } from "../components/Button";
-import { FormEvent, useState, useEffect, Children } from "react";
+import { FormEvent, useState, } from "react";
 import { useAuth } from "../hooks/useAuth";
 import { database } from "../services/firebase";
 import { Question } from "../components/Question";
@@ -103,8 +103,11 @@ export function Room() {
                 key={question.id}
                 content={question.content}
                 author={question.author}
+                isAnswered={question.isAnswered}
+                isHighlighted={question.isHighlighted}
               >
-                <button
+               { !question.isAnswered && (
+                  <button
                   className={`like-button ${question.likeId ? 'liked' : ''}`}
                   type="button"
                   aria-label="Marcar Como Gostei"
@@ -127,6 +130,7 @@ export function Room() {
                     />
                   </svg>
                 </button>
+               )}
               </Question>
             );
           })}
