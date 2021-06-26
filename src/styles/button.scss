@@ -2,22 +2,28 @@
     height: 50px;
     border-radius: 8px;
     font-weight: 500;
-    background: #835afd;
-    color: #fff;
+    background: #383A59;
+    color: #48d06d;
     padding: 0 32px;
     font-family: 'Fira Code', monospace;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 150px;
-
+    font-weight: 500;
+      
     cursor: pointer;
     border: 0;
 
-    transition: filter 0.2s;
+    transition: filter 0.4s;
 
     img {
       margin-right: 8px;
+    }
+
+    &.outlined {
+      background: #FFF;
+      border: 1px solid #383A59;
+      color: #835afd;  
     }
 
     &:not(:disabled):hover { // quando o botão não tiver desabilitado vai receber o hover
