@@ -1,5 +1,14 @@
-
- <img width="200" style="margin: 0 auto;" src="src/assets/images/logo.svg" />
+<table align="center">
+    <tr>
+        <td align="center">
+            <a href="">
+                <img src="src/assets/images/logo.svg" width="150px;" />
+                <br />
+                <sub><b>ROCKETSEAT</b></sub>
+            </a>
+        </td>    
+    </tr>
+</table>
 
 <h1> 🗣 Let Me Ask - A Q&A platform - Dracula Theme</1>
 
